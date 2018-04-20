@@ -10,7 +10,7 @@ public class Bird extends Actor
     {
         setLocation( getX(), (int)(getY()+ dy) );
         
-        if ( getOneIntersectingObject(Pipe.class) != null )
+        if (getOneIntersectingObject(Pipe.class)!=null||getOneIntersectingObject(Clouds.class) != null)
         {
             gameOver();        
         }
@@ -35,10 +35,10 @@ public class Bird extends Actor
         }
         dy = dy + gr ;       
     }
-        private void gameOver()
-        {
-            Died bye = new Died();
-            getWorld().addObject(bye, getWorld().getWidth()/2, getWorld().getHeight()/2);
-            Greenfoot.stop();
-        }
+    private void gameOver()
+    {
+        Died bye = new Died();
+        getWorld().addObject(bye, getWorld().getWidth()/2, getWorld().getHeight()/2);
+        Greenfoot.stop();
+    }
 }

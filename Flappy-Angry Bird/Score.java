@@ -3,6 +3,7 @@ import java.lang.Object;
 
 public class Score extends Actor
 {
+    Pipe pipe = new Pipe();
     public Score() 
     {
         GreenfootImage newImage = new GreenfootImage(75, 50);
@@ -16,7 +17,6 @@ public class Score extends Actor
         
         //Font fnt = new Font("Arial", Font.PLAIN, 30);
         //newImage.setFont(fnt);
-        
         //Color clr = new Color(127,127,127,127);
         newImage.setColor(Color.GREEN);
         newImage.fill();
