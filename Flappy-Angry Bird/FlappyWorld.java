@@ -5,7 +5,7 @@ public class FlappyWorld extends World
     int pipe_counter = 0;
     int flappy_counter = 0;
     int score = 0;
-    int FIRST_PIPE = 415;
+    int FIRST_PIPE = 410;
     Score myscore = null;
     
     public FlappyWorld()
@@ -35,7 +35,7 @@ public class FlappyWorld extends World
         
         if ( pipe_counter >= FIRST_PIPE)
         {
-            if ( flappy_counter % 100 == 0 )
+            if ( flappy_counter % 140 == 0 )
             {
                score++ ; 
                myscore.setScore(score);
