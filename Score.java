@@ -25,23 +25,4 @@ public class Score extends Actor
         newImage.drawString("" + score, 7, 42);
         setImage(newImage);
     }
-
-    public void addObserver(Observers newObserver)
-    {
-            observers.add(newObserver);
-    }
-    public void removeObserver(Observers observer)
-    {
-            observers.remove(observers.indexOf(observer));
-        
-    }
-    public void notifyObserver()
-    {
-            for(Observers observer : observers)
-            {
-                System.out.println("Name: " + observer);
-                observer.updateSpeed();
-            }
-            
-    }
 }
