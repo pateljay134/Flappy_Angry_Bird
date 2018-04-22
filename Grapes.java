@@ -12,6 +12,18 @@ public class Grapes extends Template
      * Act - do whatever the Grapes wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+
+    public Grapes(){
+        
+    }
+
+    public void increasePoints(int score){
+        
+    }
+    
+    public void decreaseSpeed(){
+        
+    }
     
 
 }

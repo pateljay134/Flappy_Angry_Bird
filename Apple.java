@@ -8,5 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Template
 {
+    public Apple(){
+        
+    }
+    public void increasePoints(int score){
+        
+    }
     
+    public void decreaseSpeed(){
+    
+    }
 }

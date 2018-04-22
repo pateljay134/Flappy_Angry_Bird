@@ -13,6 +13,9 @@ public abstract class Template extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      * 
      */
+
+    public abstract void increasePoints(int score);
+    public abstract void decreaseSpeed();
     
     
 }
