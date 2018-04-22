@@ -20,14 +20,7 @@ public class ScoreManager
         return scoreManager;
     }
     
-    public int getScore(){
-        return score;
-    }
-    
-    
-    public void setScore(int val){
-        score = val;
-    }
+   
     
    
     
