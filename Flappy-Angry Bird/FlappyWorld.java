@@ -30,20 +30,20 @@ public class FlappyWorld extends World
             BottomPipe pipe = new BottomPipe();
             GreenfootImage img_pipe = pipe.getImage();
             Random rndm_pipe = new Random();
-            int  add_pipe = rndm_pipe.nextInt( getHeight()) + getHeight()/3;//4&3
-            addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/7);
+            int  add_pipe = rndm_pipe.nextInt( getHeight()/4) + getHeight()/3;//4&3
+            addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/5);
            
-            if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
-            {
-                TopPipe pipe2 = new TopPipe();
-                GreenfootImage img_pipe2 = pipe2.getImage();
-                Random rndm_pipe2 = new Random();
-                int  add_pipe2 = rndm_pipe2.nextInt( getHeight()) + getHeight()/3;//4&3
-                addObject(pipe2, getWidth(), add_pipe2 + img_pipe2.getHeight()/7);
+            //if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
+            //{
+              //  TopPipe pipe2 = new TopPipe();
+                //GreenfootImage img_pipe2 = pipe2.getImage();
+               // Random rndm_pipe2 = new Random();
+               // int  add_pipe2 = rndm_pipe2.nextInt( getHeight()) + getHeight()/3;//4&3
+                //addObject(pipe2, getWidth(), add_pipe2 + img_pipe2.getHeight()/7);
            
                 //addObject(pipe2, getWidth(),1);
-                pipe2.turn(180);
-            }
+                //pipe2.turn(180);
+            //}
             Clouds cloud = new Clouds();
             GreenfootImage img_cloud = cloud.getImage();
             Random rndm_cloud = new Random();
