@@ -7,9 +7,6 @@ public class FlappyWorld extends World
     int score = 0;
     int FIRST_PIPE = 415;
     Score myscore = null;
-
-    airplane airplane = new airplane(); ;
-    BottomPipe pipe = new BottomPipe();
     
     public FlappyWorld()
     {    
@@ -30,26 +27,10 @@ public class FlappyWorld extends World
         //System.out.println(pipe_counter);
         if (pipe_counter % 140 == 0)
         {
-
-            cloud = new Clouds();
-            myscore.addObserver(cloud);
-
-
-
            Pipe pipe = new Pipe();
            
            GreenfootImage img = pipe.getImage();
            addObject(pipe, getWidth(), getHeight()/2 + img.getHeight()/2);
-
-           System.out.println("\nCloud Object is " + cloud);
-        
-            cloud = new Clouds();
-            GreenfootImage img_cloud = cloud.getImage();
-            Random rndm_cloud = new Random();
-            int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
-            addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
-
-
         }
         
         if ( pipe_counter >= FIRST_PIPE)
