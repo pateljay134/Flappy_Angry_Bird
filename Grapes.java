@@ -15,13 +15,21 @@ public class Grapes extends Template
 
     public Grapes(){
         setImage("grapes.png"); 
-        
-          flag = true;
+        flag = true;
         scoreManager = ScoreManager.getInstance();
+        store = Store.getInstance();
+        sc = store.getScore();
     }
 
+    public boolean allowed() { return flag; }
+
     public void increasePoints(int score){
-        scoreManager.addScore(50);
+        flag = false;
+        
+        score = scoreManager.getScore() + score;
+        scoreManager.setScore(score);
+      
+        sc.setScore(scoreManager.getScore());
     }
     
     public void decreaseSpeed(){
