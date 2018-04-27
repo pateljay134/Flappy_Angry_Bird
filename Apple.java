@@ -8,11 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Template
 {
+    ScoreManager sc= ScoreManager.getInstance();
     public Apple(){
-        
+        setImage("apple.png"); 
+         
+        flag = true;
+        scoreManager = ScoreManager.getInstance();
     }
     public void increasePoints(int score){
-        
+        // checking hardcoded values
+        scoreManager.addScore(100);
     }
     
     public void decreaseSpeed(){
