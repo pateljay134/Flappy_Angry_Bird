@@ -11,7 +11,12 @@ public class RadioButton extends Actor {
     
     public RadioButton(String label)
     {
-       
+        StateOn = new RadioStateOn(this);
+        StateOff = new RadioStateOff(this);
+        
+        currentState = new RadioStateOff(this);
+        
+        this.label = label;
         
         
     }
@@ -21,7 +26,9 @@ public class RadioButton extends Actor {
      
     public void stateOn() {
         
-     
+       
+        
+        currentState.doSwitchOn();
     }
      
     public void stateOff() {
@@ -45,7 +52,22 @@ public class RadioButton extends Actor {
     
     public void act() 
     {
-        
+        if (Greenfoot.mouseClicked(this)) {
+           
+            //currentState.doSwitchOn();
+            MenuPage world = (MenuPage)getWorld();
+            
+            for (RadioButton obj  : world.getRadioButtons())
+            {
+                obj.stateOff();
+            }
+            
+             Store s = Store.getInstance();
+             s.setDiffculty(this.label);
+            
+            currentState.doSwitchOn();
+            
+        }
     }
      
 }
