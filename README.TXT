@@ -10,3 +10,5 @@ VERSION or DATE: 1.0
 HOW TO START THIS PROJECT: open project.greenfoot > Run
 AUTHORS: Whole BLITZ Team
 USER INSTRUCTIONS:
+
+-initial commit
