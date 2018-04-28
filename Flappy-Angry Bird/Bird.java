@@ -7,6 +7,12 @@ public class Bird extends Actor
     double BOOST_SPEED = -8;
     GreenfootSound bckgrnd = new GreenfootSound("Background_Sound.mp3");
     GreenfootSound bird_sound = new GreenfootSound("Wheee.mp3");
+    
+    public double acceleration() {
+        double speed = (9.81 * dy)/gr;
+        return speed;
+    }
+
     public void act() 
     {
         setLocation( getX(), (int)(getY()+ dy) );
