@@ -6,7 +6,9 @@ public class FlappyWorld extends World
 {
     int pipe_counter = 0;
     int flappy_counter = 0;
+    int bird_count = 0;
     int score = 0;
+    int score = 1;
     int FIRST_PIPE = 415;
     Score myscore = null;
     
@@ -16,7 +18,9 @@ public class FlappyWorld extends World
         
         setPaintOrder(Score.class, Clouds.class, Died.class, Bird.class, BottomPipe.class);
         Bird bird = new Bird();
+        Bird bird1 = new Bird();
         addObject(bird, 200, getHeight()/2);
+        addObject(bird1, 100, getHeight()/2);
         
         myscore = new Score();
         myscore.setScore(0);
