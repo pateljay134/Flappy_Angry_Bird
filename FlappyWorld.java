@@ -48,7 +48,7 @@ public class FlappyWorld extends World
            if(score == prevScore+5)
             {
                 System.out.println("Score is increased by 2 and score is " + score + " and previous score is " + prevScore);
-                airplane = new airplane(); 
+                //airplane = new airplane(); 
                 myscore.addObserver(airplane);
                 GreenfootImage plane_image = airplane.getImage();
                 addObject(airplane, getWidth(), plane_image.getHeight()*1);
@@ -58,6 +58,7 @@ public class FlappyWorld extends World
             
 
             cloud = new Clouds();
+            myscore.addObserver(cloud);
             GreenfootImage img_cloud = cloud.getImage();
             Random rndm_cloud = new Random();
             int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5

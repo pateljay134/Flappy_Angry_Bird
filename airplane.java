@@ -11,7 +11,6 @@ public class airplane extends Actor implements Observers
     
     public void updateSpeed()
     {
-        //System.out.println("Updating speed of airplane");
-        PLANE_SPEED = 17;
+        PLANE_SPEED = PLANE_SPEED - 10;
     }
 }

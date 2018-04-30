@@ -28,21 +28,18 @@ public class Score extends Actor
 
     public void addObserver(Observers newObserver)
     {
-        observers.add(newObserver);
-        //System.out.println("Observer registered: " + newObserver);
+            observers.add(newObserver);
     }
     public void removeObserver(Observers observer)
     {
-            //System.out.println("Observer unregistered: " + observer);
             observers.remove(observers.indexOf(observer));
         
     }
     public void notifyObserver()
     {
-            System.out.println(" Notifing observer ");
             for(Observers observer : observers)
             {
-                //System.out.println("Name: " + observer);
+                System.out.println("Name: " + observer);
                 observer.updateSpeed();
             }
             
