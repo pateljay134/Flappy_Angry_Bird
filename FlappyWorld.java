@@ -33,6 +33,37 @@ public class FlappyWorld extends World
            addObject(pipe, getWidth(), getHeight()/2 + img.getHeight()/2);
         }
         
+        addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
+
+            Random rand = new Random();
+            
+            int  n = rand.nextInt(2) + 1;
+            
+            
+            if(n == 1){
+                Clouds cloud = new Clouds();
+                GreenfootImage img_cloud = cloud.getImage();
+                Random rndm_cloud = new Random();
+                myscore.addObserver(cloud);
+                int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            }else{
+                 Clouds cloud = new Clouds();
+                GreenfootImage img_cloud = cloud.getImage();
+                Random rndm_cloud = new Random();
+                myscore.addObserver(cloud);
+                int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            }
+
+
+            cloud = new Clouds();
+            myscore.addObserver(cloud);
+            GreenfootImage img_cloud = cloud.getImage();
+            Random rndm_cloud = new Random();
+            int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
+
+
+        
         if ( pipe_counter >= FIRST_PIPE)
         {
             if ( flappy_counter % 100 == 0 )
