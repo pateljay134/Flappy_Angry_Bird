@@ -20,11 +20,53 @@ public class FlappyWorld
         
          switch(difficulty) {
         
+<<<<<<< HEAD
+        addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
+
+            Random rand = new Random();
+            
+            int  n = rand.nextInt(2) + 1;
+            
+            
+            if(n == 1){
+                Clouds cloud = new Clouds();
+                GreenfootImage img_cloud = cloud.getImage();
+                Random rndm_cloud = new Random();
+                myscore.addObserver(cloud);
+                int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            }else{
+                 Clouds cloud = new Clouds();
+                GreenfootImage img_cloud = cloud.getImage();
+                Random rndm_cloud = new Random();
+                myscore.addObserver(cloud);
+                int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            }
+
+
+            cloud = new Clouds();
+            myscore.addObserver(cloud);
+            GreenfootImage img_cloud = cloud.getImage();
+            Random rndm_cloud = new Random();
+            int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
+            addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
+
+
+        
+        if ( pipe_counter >= FIRST_PIPE)
+        {
+            if ( flappy_counter % 100 == 0 )
+            {
+               score++ ; 
+               myscore.setScore(score);
+            }
+            flappy_counter++ ;
+=======
             case "Easy" : gameStrategy = new EasyGameStrategy(); break;
             default :
             case "Medium" :gameStrategy = new MediumGameStrategy(); break;
             case "Hard" :gameStrategy = new HardGameStrategy(); break;
             case "Brutal" : gameStrategy = new BrutalGameStrategy(); break;
+>>>>>>> 8c5e6dc5ecb7dd728c2e11eff6fa06dd3c5dc264
         }
         
     }

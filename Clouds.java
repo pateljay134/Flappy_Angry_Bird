@@ -22,8 +22,7 @@ public class Clouds extends Actor implements Observers
     
     public void updateSpeed()
     {
-        System.out.println("Speed is "+cloud_speed);
-        this.cloud_speed = cloud_speed -1 ;
+        this.cloud_speed = cloud_speed -10 ;
         store.setSpeed(cloud_speed);
        
     }
