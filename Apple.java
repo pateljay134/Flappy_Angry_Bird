@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Template
 {
+    /**
+     * Act - do whatever the Apple wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     ScoreManager scoreManager;
     Store store;
     Score sc;
@@ -36,6 +40,6 @@ public class Apple extends Template
     }
     
     public void decreaseSpeed(){
-    
+        bp.reducePipeSpeed();
     }
 }

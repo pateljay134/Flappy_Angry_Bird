@@ -13,7 +13,11 @@ public abstract class Template extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      * 
      */
-
+    
+    int objectSpeed = -13;
+   
+    //int CLOUD_INTERIA = 0.
+    
     public void act() 
     {
         // Add your action code here.
@@ -23,6 +27,4 @@ public abstract class Template extends Actor
     
     public abstract void increasePoints(int score);
     public abstract void decreaseSpeed();
-    
-    
 }
