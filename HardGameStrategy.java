@@ -4,15 +4,7 @@ import java.util.*;
 
 public class HardGameStrategy extends GameStrategy
 {
-    int pipe_counter = 0;
-    int flappy_counter = 0;
-    int bird_count = 0;
-    int score = 0;
-    int prevScore = 0;
-    //int score = 1;
-    int FIRST_PIPE = 415;
-    Score myscore = null;
-    ScoreManager scoreManager;
+    
     
     public HardGameStrategy()
     {    
@@ -20,10 +12,7 @@ public class HardGameStrategy extends GameStrategy
          Bird bird = new Bird();
        addObject(bird, 200, getHeight()/2);
        
-        
-       myscore = new Score();
-       scoreManager = ScoreManager.getInstance();
-       setScore(myscore);
+   
         
       addObject(myscore, 70, 30);
         
