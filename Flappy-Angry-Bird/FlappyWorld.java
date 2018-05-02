@@ -8,6 +8,7 @@ public class FlappyWorld extends World
     int flappy_counter = 0;
     int bird_count = 0;
     int score = 0;
+    int prevScore = 0;
     //int score = 1;
     int FIRST_PIPE = 415;
     Score myscore = null;
@@ -18,9 +19,9 @@ public class FlappyWorld extends World
         
         setPaintOrder(Score.class, Clouds.class, Died.class, Bird.class, BottomPipe.class);
         Bird bird = new Bird();
-        Bird bird1 = new Bird();
+        //Bird bird1 = new Bird();
         addObject(bird, 200, getHeight()/2);
-        addObject(bird1, 100, getHeight()/2);
+        //addObject(bird1, 100, getHeight()/2);
         
         myscore = new Score();
         myscore.setScore(0);
@@ -35,13 +36,23 @@ public class FlappyWorld extends World
             GreenfootImage img_pipe = pipe.getImage();
             Random rndm_pipe = new Random();
             int  add_pipe = rndm_pipe.nextInt( getHeight()/4) + getHeight()/3;//4&3
+            addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/2);
             addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/5);
             
+            
+            if (pipe_counter % 280 == 0){
             Butterfly butterfly = new Butterfly();
             GreenfootImage img_butterfly = butterfly.getImage();
-            addObject(butterfly, getWidth(), img_butterfly.getHeight()/2);
+            addObject(butterfly, getWidth(), img_butterfly.getHeight()*2);
             butterfly.turn(180);
-          
+            }
+             if(score == prevScore+5)
+            {
+                airplane airplane = new airplane();
+                GreenfootImage plane_image = airplane.getImage();
+                addObject(airplane, getWidth(), plane_image.getHeight()*1);
+                prevScore += score;
+            }
            
             //if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
             //{
