@@ -8,7 +8,7 @@ public class FlappyWorld extends World
     int flappy_counter = 0;
     int bird_count = 0;
     int score = 0;
-    int score = 1;
+    //int score = 1;
     int FIRST_PIPE = 415;
     Score myscore = null;
     
@@ -36,6 +36,12 @@ public class FlappyWorld extends World
             Random rndm_pipe = new Random();
             int  add_pipe = rndm_pipe.nextInt( getHeight()/4) + getHeight()/3;//4&3
             addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/5);
+            
+            Butterfly butterfly = new Butterfly();
+            GreenfootImage img_butterfly = butterfly.getImage();
+            addObject(butterfly, getWidth(), img_butterfly.getHeight()/2);
+            butterfly.turn(180);
+          
            
             //if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
             //{
