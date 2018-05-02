@@ -20,6 +20,7 @@ public class Bird extends Actor
         if ( (getOneIntersectingObject(BottomPipe.class) != null) ||
             (getOneIntersectingObject(TopPipe.class) != null) || 
             (getOneIntersectingObject(Clouds.class) != null) ||
+            (getOneIntersectingObject(airplane.class) != null) ||
             (getY() > getWorld().getHeight()) || (getY() < -100))
         {
             Died game_over = new Died();
