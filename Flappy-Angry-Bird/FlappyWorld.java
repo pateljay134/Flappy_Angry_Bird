@@ -43,7 +43,7 @@ public class FlappyWorld extends World
             if (pipe_counter % 280 == 0){
             Butterfly butterfly = new Butterfly();
             GreenfootImage img_butterfly = butterfly.getImage();
-            addObject(butterfly, getWidth(), img_butterfly.getHeight()*2);
+            addObject(butterfly, getWidth(), img_butterfly.getHeight()*4);
             butterfly.turn(180);
             }
              if(score == prevScore+5)
