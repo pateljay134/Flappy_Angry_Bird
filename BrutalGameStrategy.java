@@ -2,7 +2,7 @@ import greenfoot.*;
 import java.util.Random;
 import java.util.*;
 
-public class HardGameStrategy extends GameStrategy
+public class BrutalGameStrategy extends GameStrategy
 {
     int pipe_counter = 0;
     int flappy_counter = 0;
@@ -14,20 +14,23 @@ public class HardGameStrategy extends GameStrategy
     Score myscore = null;
     ScoreManager scoreManager;
     
-    public HardGameStrategy()
+    public BrutalGameStrategy()
     {    
-        
-         Bird bird = new Bird();
-       addObject(bird, 200, getHeight()/2);
        
         
-       myscore = new Score();
-       scoreManager = ScoreManager.getInstance();
-       setScore(myscore);
+          Bird bird = new Bird();
+          Bird bird1 = new Bird("l");
+          addObject(bird, 200, getHeight()/2);
+          addObject(bird1, 300, getHeight()/2);
+       
         
-      addObject(myscore, 70, 30);
+          myscore = new Score();
+          scoreManager = ScoreManager.getInstance();
+          setScore(myscore);
         
-        setSpeed(-6);
+          addObject(myscore, 70, 30);
+       
+       
     }
     
     public void act(){
@@ -73,7 +76,7 @@ public class HardGameStrategy extends GameStrategy
             int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
             addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
             
-             Random rand = new Random();
+            Random rand = new Random();
             
             int  n = rand.nextInt(2) + 1;
             

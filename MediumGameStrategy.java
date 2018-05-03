@@ -2,7 +2,7 @@ import greenfoot.*;
 import java.util.Random;
 import java.util.*;
 
-public class HardGameStrategy extends GameStrategy
+public class MediumGameStrategy extends GameStrategy
 {
     int pipe_counter = 0;
     int flappy_counter = 0;
@@ -14,10 +14,10 @@ public class HardGameStrategy extends GameStrategy
     Score myscore = null;
     ScoreManager scoreManager;
     
-    public HardGameStrategy()
+    public MediumGameStrategy()
     {    
-        
-         Bird bird = new Bird();
+       
+       Bird bird = new Bird();
        addObject(bird, 200, getHeight()/2);
        
         
@@ -25,9 +25,7 @@ public class HardGameStrategy extends GameStrategy
        scoreManager = ScoreManager.getInstance();
        setScore(myscore);
         
-      addObject(myscore, 70, 30);
-        
-        setSpeed(-6);
+       addObject(myscore, 70, 30);
     }
     
     public void act(){
@@ -41,39 +39,17 @@ public class HardGameStrategy extends GameStrategy
             addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/2);
             addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/5);
             
-            
-            if (pipe_counter % 280 == 0){
-            Butterfly butterfly = new Butterfly();
-            GreenfootImage img_butterfly = butterfly.getImage();
-            addObject(butterfly, getWidth(), img_butterfly.getHeight()*4);
-            butterfly.turn(180);
-            }
-             if(score == prevScore+5)
-            {
-                airplane airplane = new airplane();
-                GreenfootImage plane_image = airplane.getImage();
-                addObject(airplane, getWidth(), plane_image.getHeight()*1);
-                prevScore += score;
-            }
            
-            //if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
-            //{
-              //  TopPipe pipe2 = new TopPipe();
-                //GreenfootImage img_pipe2 = pipe2.getImage();
-               // Random rndm_pipe2 = new Random();
-               // int  add_pipe2 = rndm_pipe2.nextInt( getHeight()) + getHeight()/3;//4&3
-                //addObject(pipe2, getWidth(), add_pipe2 + img_pipe2.getHeight()/7);
-           
-                //addObject(pipe2, getWidth(),1);
-                //pipe2.turn(180);
-            //}
             Clouds cloud = new Clouds();
             GreenfootImage img_cloud = cloud.getImage();
             Random rndm_cloud = new Random();
             int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
             addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
             
-             Random rand = new Random();
+            myscore.addObserver(cloud);
+            myscore.checkScore(score);
+            
+            Random rand = new Random();
             
             int  n = rand.nextInt(2) + 1;
             

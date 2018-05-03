@@ -20,30 +20,6 @@ public class FlappyWorld
         
          switch(difficulty) {
         
-        addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
-
-            Random rand = new Random();
-            
-            int  n = rand.nextInt(2) + 1;
-            
-            
-                Clouds cloud = new Clouds();
-                GreenfootImage img_cloud = cloud.getImage();
-                Random rndm_cloud = new Random();
-                myscore.addObserver(cloud);
-                int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;
-
-
-        
-        if ( pipe_counter >= FIRST_PIPE)
-        {
-            if ( flappy_counter % 100 == 0 )
-            {
-               score++ ; 
-               myscore.setScore(score);
-            }
-            flappy_counter++ ;
-
             case "Easy" : gameStrategy = new EasyGameStrategy(); break;
             default :
             case "Medium" :gameStrategy = new MediumGameStrategy(); break;
