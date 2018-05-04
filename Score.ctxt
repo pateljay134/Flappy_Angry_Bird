@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Score
+comment1.params=
+comment1.target=Score()
+comment2.params=score
+comment2.target=void\ checkScore(int)
+comment3.params=score
+comment3.target=void\ setScore(int)
+comment4.params=newObserver
+comment4.target=void\ addObserver(Observers)
+comment5.params=observer
+comment5.target=void\ removeObserver(Observers)
+comment6.params=
+comment6.target=void\ notifyObserver()
+numComments=7

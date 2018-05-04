@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Apple
+comment0.text=\n\ Write\ a\ description\ of\ class\ Apple\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Apple()
+comment2.params=
+comment2.target=boolean\ allowed()
+comment3.params=score
+comment3.target=void\ increasePoints(int)
+comment4.params=
+comment4.target=void\ decreaseSpeed()
+numComments=5

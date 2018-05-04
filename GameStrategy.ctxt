@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=GameStrategy
+comment1.params=
+comment1.target=GameStrategy()
+comment2.params=s
+comment2.target=void\ setScore(Score)
+comment3.params=s
+comment3.target=void\ setSpeed(int)
+comment4.params=
+comment4.target=void\ act()
+numComments=5

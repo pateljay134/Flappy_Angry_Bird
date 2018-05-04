@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=RadioStateOff
+comment0.text=\n\ Write\ a\ description\ of\ class\ RadioStateOff\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=rs
+comment1.target=RadioStateOff(RadioButton)
+comment2.params=
+comment2.target=void\ doSwitchOn()
+numComments=3

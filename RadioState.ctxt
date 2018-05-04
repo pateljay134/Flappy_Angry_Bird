@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=RadioState
+comment1.params=rs
+comment1.target=RadioState(RadioButton)
+comment2.params=filename
+comment2.target=void\ setImage(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getState()
+comment4.params=
+comment4.target=void\ doSwitchOn()
+comment5.params=
+comment5.target=void\ doSwitchOff()
+numComments=6

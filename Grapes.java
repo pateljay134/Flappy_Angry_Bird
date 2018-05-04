@@ -42,5 +42,7 @@ public class Grapes extends Template
         sc.setScore(scoreManager.getScore());
     }
     
-    public void decreaseSpeed(){}
+    public void decreaseSpeed(){
+        bp.reducePipeSpeed();
+    }
 }

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Store
+comment0.text=\n\ Write\ a\ description\ of\ class\ Store\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Store()
+comment2.params=
+comment2.target=Store\ getInstance()
+comment3.params=s
+comment3.target=void\ setScore(Score)
+comment4.params=
+comment4.target=Score\ getScore()
+comment5.params=s
+comment5.target=void\ setSpeed(int)
+comment6.params=
+comment6.target=int\ getSpeed()
+comment7.params=
+comment7.target=java.lang.String\ getDiffculty()
+comment8.params=d
+comment8.target=void\ setDiffculty(java.lang.String)
+numComments=9
