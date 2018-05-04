@@ -3,11 +3,12 @@ Team : BLITZ
 Game Topic : Angry Flappy Bird
 
 Members :
-		* 1. Abhin Sharma
-		* 2. Murtaza Manaswala
-		* 3. Harshrajsinh Rathod
-		* 4. Vishwajeet Kharote
-		* 5. Jaykumar Patel
+
+1. Abhin Sharma
+2. Murtaza Manaswala
+3. Harshrajsinh Rathod
+4. Vishwajeet Kharote
+5. Jaykumar Patel
 
 ## Links
 
