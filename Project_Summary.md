@@ -19,10 +19,16 @@ Members :
 * Game Video: https://youtu.be/6eKw4QWndFA
 
 
-Short Summary of each members contributors
+## Team member's GitHub Account for transfer
+
+* Abhin: abhinsharma
+* Jaykumar: pateljay134
+* Harshrajsinh: harshrajsinh96
+* Murtaza: murtazabeans
+* Vishwajeet: VishwajeetKharote
 
 
-# Contribution for each team member
+# Short Summary of each members and their contribution:
 
 ## Abhin Sharma
 * Designed the basic game
@@ -57,4 +63,3 @@ Short Summary of each members contributors
 * Implemented the observer pattern to increase the speed of various obstacles when the score reaches treshold value.
 *  Made the UI Wireframes for the game screens.
 * Ensured that the XP core value of feedback and communication are followed during the lifespan of the project.
-
