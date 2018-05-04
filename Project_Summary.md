@@ -16,7 +16,7 @@ Members :
 * Github Journal Repo: https://github.com/nguyensjsu/team202-blitz/tree/master/Project%20Journals
 * Github Project Taskboard: https://github.com/nguyensjsu/team202-blitz/projects/2
 * TaskSheet Link: https://docs.google.com/spreadsheets/d/1GWznX7YcfgsB1yb3y_6rSxD_INGaYVeo4zs6rzPNk2c/edit?usp=sharing
-* Game Video: https://youtu.be/B9bGwT56Pi0
+* Game Video: https://youtu.be/6eKw4QWndFA
 
 
 Short Summary of each members contributors
