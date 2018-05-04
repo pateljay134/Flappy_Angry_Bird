@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed May 02 00:05:44 PDT 2018
+#Wed May 02 00:43:40 PDT 2018
 editor.fx.0.height=816
 target2.width=80
 target8.name=BottomPipe
@@ -66,6 +66,7 @@ mainWindow.y=22
 mainWindow.x=0
 target5.showInterface=false
 class.Died.superclass=greenfoot.Actor
+class.MenuPage.superclass=greenfoot.World
 dependency5.from=Bird
 target8.showInterface=false
 target7.typeParameters=
@@ -109,7 +110,9 @@ target3.typeParameters=
 dependency3.to=FlappyWorld
 target7.name=FlappyWorld
 target2.naviview.expanded=true
+class.MenuItem.superclass=greenfoot.Actor
 dependency11.type=UsesDependency
+class.MenuItem.image=button-blue.png
 package.numDependencies=13
 class.Butterfly.superclass=greenfoot.Actor
 class.Bird.superclass=greenfoot.Actor
