@@ -3,36 +3,45 @@ Team : BLITZ
 Game Topic : Angry Flappy Bird
 
 Members :
-		1. Abhin Sharma
-		2. Murtaza Manaswala
-		3. Harshrajsinh Rathod
-		4. Vishwajeet Kharote
-		5. Jaykumar Patel
 
-Github Repo: https://github.com/nguyensjsu/team202-blitz
-Github Journal Repo: https://github.com/nguyensjsu/team202-blitz/tree/master/Project%20Journals
-Github Project Taskboard: https://github.com/nguyensjsu/team202-blitz/projects/2
-TaskSheet Link: https://docs.google.com/spreadsheets/d/1GWznX7YcfgsB1yb3y_6rSxD_INGaYVeo4zs6rzPNk2c/edit?usp=sharing
-Game Video: https://youtu.be/B9bGwT56Pi0
+1. Abhin Sharma
+2. Murtaza Manaswala
+3. Harshrajsinh Rathod
+4. Vishwajeet Kharote
+5. Jaykumar Patel
+
+## Links
+
+* Github Repo: https://github.com/nguyensjsu/team202-blitz
+* Github Journal Repo: https://github.com/nguyensjsu/team202-blitz/tree/master/Project%20Journals
+* Github Project Taskboard: https://github.com/nguyensjsu/team202-blitz/projects/2
+* TaskSheet Link: https://docs.google.com/spreadsheets/d/1GWznX7YcfgsB1yb3y_6rSxD_INGaYVeo4zs6rzPNk2c/edit?usp=sharing
+* Game Video: https://youtu.be/6eKw4QWndFA
 
 
-Short Summary of each members contributors?
+## Team member's GitHub Account for transfer
+
+* Abhin: abhinsharma
+* Jaykumar: pateljay134
+* Harshrajsinh: harshrajsinh96
+* Murtaza: murtazabeans
+* Vishwajeet: VishwajeetKharote
 
 
-# Contribution for each team member
+# Short Summary of each members and their contribution:
 
 ## Abhin Sharma
 * Designed the basic game
 * Implemented the strategy design pattern for changing the difficulty of the game.
 * Took the responsibilty for the UML sequence diagram.
-*   Ensured that the XP core value of Courage and Build Integrity In Team is undertaken.
+* Ensured that the XP core value of Courage and Build Integrity In Team is undertaken.
 * Removed errors after integrating of code.
 
 ## Murtaza Manaswala
 * Designed the working game and put forth the idea to use Greenfoot.
 * Implemented the template pattern to increment the score of collecting the bonus objects.
 * Responsible for the class diagrams and Use Case specification.
-*  Ensured that the XP core value of Respect and Feedback so that the team members understand each others work and respect the view of other team members.
+* Ensured that the XP core value of Respect and Feedback so that the team members understand each others work and respect the view of other team members.
 
 ## Vishwajeet Kharote
 * Created the Actors, Obstacles, Background images for the game.
@@ -54,4 +63,3 @@ Short Summary of each members contributors?
 * Implemented the observer pattern to increase the speed of various obstacles when the score reaches treshold value.
 *  Made the UI Wireframes for the game screens.
 * Ensured that the XP core value of feedback and communication are followed during the lifespan of the project.
-
