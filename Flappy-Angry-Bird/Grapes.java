@@ -13,24 +13,36 @@ public class Grapes extends Template
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    ScoreManager scoreManager;
-    Score sc = new Score();
+   ScoreManager scoreManager;
+    Store store;
+    Score sc;
+    BottomPipe bp = new BottomPipe();
+    
+    boolean flag;
     public Grapes(){
-        //GreenfootImage img = this.getImage();
-        //addObject(this, getWidth(), img.getHeight()*4);
         
-        scoreManager = ScoreManager.getInstance(); 
+        setImage("grapes.png"); 
+        
+          flag = true;
+        scoreManager = ScoreManager.getInstance();
+        store = Store.getInstance();
+        sc = store.getScore();
         
     }
+    public boolean allowed() { return flag; }
     
-    public void increasePoints(int score){
-        System.out.println("Inside");
-        //FlappyWorld.updateScore(20);
-        //scoreManager.addScore(5);
+     public void increasePoints(int score){
+        
+       
+        flag = false;
+        
+        score = scoreManager.getScore() + score;
+        scoreManager.setScore(score);
       
-      //  sc.setScore(scoreManager.getScore());
-
+        sc.setScore(scoreManager.getScore());
     }
     
-    public void decreaseSpeed(){}
+    public void decreaseSpeed(){
+        bp.reducePipeSpeed();
+    }
 }

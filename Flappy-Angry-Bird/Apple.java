@@ -14,14 +14,18 @@ public class Apple extends Template
 
      */
     ScoreManager scoreManager;
-    Score sc = new Score();
+    Store store;
+    Score sc;
     BottomPipe bp = new BottomPipe();
     boolean flag;
     public Apple(){
-        //GreenfootImage img = this.getImage();
-        //addObject(this, getWidth(), img.getHeight()*4);
+       
+         setImage("apple.png"); 
+         
         flag = true;
-        scoreManager = ScoreManager.getInstance(); 
+        scoreManager = ScoreManager.getInstance();
+        store = Store.getInstance();
+        sc = store.getScore();
         
     }
     public boolean allowed() { return flag; }
@@ -29,7 +33,7 @@ public class Apple extends Template
         System.out.println("Inside");
         //FlappyWorld.updateScore(20);
         flag = false;
-        System.out.println(score+" <=> "+scoreManager.getScore());
+        //System.out.println(score+" <=> "+scoreManager.getScore());
         score = scoreManager.getScore() + score;
         scoreManager.setScore(score);
       

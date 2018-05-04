@@ -1,15 +1,31 @@
 import greenfoot.*;
 
-public class Clouds extends Actor
+public class Clouds extends Actor implements Observers
 {
-    int CLOUD_SPEED = -13;
+    int cloud_speed;
     int CLOUD_SIZE = 1;
-    //int CLOUD_INTERIA = 0.8;
-    String color;
-
+    Store store;
+    
+    public Clouds() {
+        
+        store = Store.getInstance();
+        cloud_speed = store.getSpeed();
+        
+    }
+  
 
     public void act() 
     {
-        setLocation ( getX() + CLOUD_SPEED, getY());
-    }    
+        
+        setLocation ( getX() + cloud_speed, getY());
+    }  
+    
+    public void updateSpeed()
+    {
+        System.out.println("Speed is "+cloud_speed);
+        this.cloud_speed = cloud_speed -1 ;
+        store.setSpeed(cloud_speed);
+       
+    }
+    
 }

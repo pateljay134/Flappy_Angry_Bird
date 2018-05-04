@@ -12,11 +12,17 @@ public class MenuItem extends Actor
      * Act - do whatever the MenuItem wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    String label;
+    String filename;
+    private Command theCommand ;
     
-    public MenuItem(String label){
+    public MenuItem(String filename,int x,int y,World world){
         
-        this.label = label;
+         this.filename = filename;
+            
+        world.addObject(this,x,y);
+        setImage(filename); 
+        
+       
     
     }
     
@@ -24,9 +30,17 @@ public class MenuItem extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
            
-             FlappyWorld w = new FlappyWorld();
-             Greenfoot.setWorld(w);
+             invoke();
             
         }
-    }    
+    }
+    
+    public void setCommand(Command cmd) {
+	    theCommand = cmd ;
+	}
+
+	public void invoke() {
+	    theCommand.execute();
+	}
+	
 }

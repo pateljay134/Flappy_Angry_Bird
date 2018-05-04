@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=Bird
 comment1.params=
-comment1.target=double\ acceleration()
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment1.target=Bird()
+comment2.params=key
+comment2.target=Bird(java.lang.String)
+comment3.params=
+comment3.target=double\ acceleration()
+comment4.params=
+comment4.target=void\ act()
+numComments=5

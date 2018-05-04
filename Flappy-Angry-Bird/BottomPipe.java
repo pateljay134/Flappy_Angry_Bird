@@ -2,9 +2,14 @@ import greenfoot.*;
 
 public class BottomPipe extends Actor
 {
-    int PIPE_SPEED = -4;
+    int pipe_speed = -8;
     public void act() 
     {
-        setLocation ( getX() + PIPE_SPEED, getY());
-    }    
+        setLocation ( getX() + pipe_speed, getY());
+    }
+    
+    public void reducePipeSpeed(){
+        pipe_speed+= 0.5;
+    }
+    
 }

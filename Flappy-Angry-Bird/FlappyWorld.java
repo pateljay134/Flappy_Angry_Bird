@@ -2,84 +2,35 @@ import greenfoot.*;
 import java.util.Random;
 import java.util.*;
 
-public class FlappyWorld extends World
+public class FlappyWorld
 {
-    int pipe_counter = 0;
-    int flappy_counter = 0;
-    int bird_count = 0;
-    int score = 0;
-    int prevScore = 0;
-    //int score = 1;
-    int FIRST_PIPE = 415;
-    Score myscore = null;
     
+    GameStrategy gameStrategy;
+    Store store = Store.getInstance();
+   
     public FlappyWorld()
     {    
-        super(1200, 800, 1, false);
-        
-        setPaintOrder(Score.class, Clouds.class, Died.class, Bird.class, BottomPipe.class);
-        Bird bird = new Bird();
-        //Bird bird1 = new Bird();
-        addObject(bird, 200, getHeight()/2);
-        //addObject(bird1, 100, getHeight()/2);
-        
-        myscore = new Score();
-        myscore.setScore(0);
-        addObject(myscore, 600, 30);
+       gameStrategy = new MediumGameStrategy();
+       
+       
     }
     
-    public void act(){
-        pipe_counter++ ;
-        if (pipe_counter % 140 == 0)
-        {
-            BottomPipe pipe = new BottomPipe();
-            GreenfootImage img_pipe = pipe.getImage();
-            Random rndm_pipe = new Random();
-            int  add_pipe = rndm_pipe.nextInt( getHeight()/4) + getHeight()/3;//4&3
-            addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/2);
-            addObject(pipe, getWidth(), add_pipe + img_pipe.getHeight()/5);
-            
-            
-            if (pipe_counter % 280 == 0){
-            Butterfly butterfly = new Butterfly();
-            GreenfootImage img_butterfly = butterfly.getImage();
-            addObject(butterfly, getWidth(), img_butterfly.getHeight()*4);
-            butterfly.turn(180);
-            }
-             if(score == prevScore+5)
-            {
-                airplane airplane = new airplane();
-                GreenfootImage plane_image = airplane.getImage();
-                addObject(airplane, getWidth(), plane_image.getHeight()*1);
-                prevScore += score;
-            }
-           
-            //if (pipe_counter % 140 !=0 && pipe_counter % 70 !=0)
-            //{
-              //  TopPipe pipe2 = new TopPipe();
-                //GreenfootImage img_pipe2 = pipe2.getImage();
-               // Random rndm_pipe2 = new Random();
-               // int  add_pipe2 = rndm_pipe2.nextInt( getHeight()) + getHeight()/3;//4&3
-                //addObject(pipe2, getWidth(), add_pipe2 + img_pipe2.getHeight()/7);
-           
-                //addObject(pipe2, getWidth(),1);
-                //pipe2.turn(180);
-            //}
-            Clouds cloud = new Clouds();
-            GreenfootImage img_cloud = cloud.getImage();
-            Random rndm_cloud = new Random();
-            int  add_cloud = rndm_cloud.nextInt( getHeight()/5) + 3;//5&5
-            addObject(cloud, getWidth(), add_cloud + img_cloud.getHeight());
+    
+    public void changeStrategy(String difficulty) {
+        
+         switch(difficulty) {
+        
+            case "Easy" : gameStrategy = new EasyGameStrategy(); break;
+            default :
+            case "Medium" :gameStrategy = new MediumGameStrategy(); break;
+            case "Hard" :gameStrategy = new HardGameStrategy(); break;
+            case "Brutal" : gameStrategy = new BrutalGameStrategy(); break;
         }
         
-        if ( pipe_counter >= FIRST_PIPE)
-        {
-            if ( flappy_counter % 140 == 0 )
-            {
-               score++ ; 
-               myscore.setScore(score);
-            }
-            flappy_counter++ ;
-        }
     }
+    
+    public void start() {
+        Greenfoot.setWorld(gameStrategy);
+    }
+    
 }
