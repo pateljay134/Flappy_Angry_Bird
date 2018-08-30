@@ -15,7 +15,9 @@
 ## Development Environment 
 
 | Greenfoot | 
-|![Image of Greenfoot]( https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg) {:height="12px" width="12px"}|
+|--|
+|![Image of Greenfoot]( https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg) |
+|--|
 | An integrated development environment using Java or Stride|
 
 ## 📝 Author
