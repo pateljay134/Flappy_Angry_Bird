@@ -10,8 +10,6 @@
 
 * The goal is to build a game in Greenfoot Environment in Java language with the learning of Agile Process, Scrum and Kanban. Also, game has to be developed with five Java Design Patterns where we implemented Command, State, Strategy, Template, and Observer patterns.
 
-## System Design
-
 ## Development Environment 
 
 | Greenfoot | 
