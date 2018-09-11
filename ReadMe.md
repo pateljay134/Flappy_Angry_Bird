@@ -14,7 +14,7 @@
 
 | Greenfoot | 
 |--|
-|![Image of Greenfoot width="40%"]( https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg) |
+|![Image of Greenfoot width="40"]( https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg) |
 |An integrated development environment using Java or Stride|
 
 ### Steps to run application:
