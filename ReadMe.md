@@ -17,6 +17,12 @@
 |![Image of Greenfoot]( https://upload.wikimedia.org/wikipedia/commons/4/43/Greenfoot_Logo.jpg) |
 |An integrated development environment using Java or Stride|
 
+### Steps to run application:
+
+1. Download the Zip file and unzip it
+2. Add the Flappy-Angry-Bird folder as a project and run the application.
+
+
 ## 📝 Author
 
 
